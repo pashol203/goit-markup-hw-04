@@ -477,24 +477,40 @@ img {
 /*============HEADER+NAV============*/
 
 .second-section {
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(/images/img11.jpg);
 }
+.button-order{
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-top{
+  transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.studio-item {
+  position: relative;
+  color: #404bbf;
+  transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .navigation-top {
   display: block;
 }
 .studio-item::after {
-  display: flex;
   content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
   width: 48px;
   height: 4px;
-  border-radius: 2px;
-  padding-left: 0;
-  padding-bottom: -1px;
-  background: var(--OCEAN, #404bbf);
 }
 /*===========BLOCK-TEXT===========*/
 .svg-container {
